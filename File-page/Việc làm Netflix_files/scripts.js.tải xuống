@@ -1,0 +1,18 @@
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  // eslint-disable-next-line no-undef,prefer-rest-params
+  dataLayer.push(arguments);
+}
+gtag('js', new Date());
+
+gtag('config', 'G-4Y3WKF2MY1', { optimize_id: 'GTM-PFXPCSV' });
+
+// Leaving here in case netflix wants to add this back
+// eslint-disable-next-line no-unused-vars
+// function OptanonWrapper() {
+//   const regCheckPerformance = /,C0002,/;
+//
+//   if (!OptanonActiveGroups.match(regCheckPerformance)) {
+//     window.location.reload();
+//   }
+// }

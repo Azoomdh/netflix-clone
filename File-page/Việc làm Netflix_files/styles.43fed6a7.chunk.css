@@ -1,0 +1,248 @@
+/*
+ * Container style
+ */
+.ps {
+  overflow: hidden !important;
+  overflow-anchor: none;
+  -ms-overflow-style: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
+}
+
+/*
+ * Scrollbar rail styles
+ */
+.ps__rail-x {
+  display: none;
+  opacity: 0;
+  transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  height: 15px;
+  /* there must be 'bottom' or 'top' for ps__rail-x */
+  bottom: 0px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__rail-y {
+  display: none;
+  opacity: 0;
+  transition: background-color .2s linear, opacity .2s linear;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  width: 15px;
+  /* there must be 'right' or 'left' for ps__rail-y */
+  right: 0;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps--active-x > .ps__rail-x,
+.ps--active-y > .ps__rail-y {
+  display: block;
+  background-color: transparent;
+}
+
+.ps:hover > .ps__rail-x,
+.ps:hover > .ps__rail-y,
+.ps--focus > .ps__rail-x,
+.ps--focus > .ps__rail-y,
+.ps--scrolling-x > .ps__rail-x,
+.ps--scrolling-y > .ps__rail-y {
+  opacity: 0.6;
+}
+
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: #eee;
+  opacity: 0.9;
+}
+
+/*
+ * Scrollbar thumb styles
+ */
+.ps__thumb-x {
+  background-color: #aaa;
+  border-radius: 6px;
+  transition: background-color .2s linear, height .2s ease-in-out;
+  -webkit-transition: background-color .2s linear, height .2s ease-in-out;
+  height: 6px;
+  /* there must be 'bottom' for ps__thumb-x */
+  bottom: 2px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__thumb-y {
+  background-color: #aaa;
+  border-radius: 6px;
+  transition: background-color .2s linear, width .2s ease-in-out;
+  -webkit-transition: background-color .2s linear, width .2s ease-in-out;
+  width: 6px;
+  /* there must be 'right' for ps__thumb-y */
+  right: 2px;
+  /* please don't change 'position' */
+  position: absolute;
+}
+
+.ps__rail-x:hover > .ps__thumb-x,
+.ps__rail-x:focus > .ps__thumb-x,
+.ps__rail-x.ps--clicking .ps__thumb-x {
+  background-color: #999;
+  height: 11px;
+}
+
+.ps__rail-y:hover > .ps__thumb-y,
+.ps__rail-y:focus > .ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
+  background-color: #999;
+  width: 11px;
+}
+
+/* MS supports */
+@supports (-ms-overflow-style: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps {
+    overflow: auto !important;
+  }
+}
+.scrollbar-container {
+  position: relative;
+  height: 100%; }
+/* Base style reset */
+.OverrideHawkins-Base * {
+  font-family: unset;
+  font-size: unset;
+  font-weight: unset;
+  border-radius: unset;
+}
+
+/* Text related */
+.OverrideHawkins-Dropdown-root .Hawkins-label {
+  margin-bottom: 10px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  line-height: 22px;
+}
+/* ¯\_(ツ)_/¯ hack needed to accommodate the longer text for smaller screens. 
+   Refactor needed if we decide to convert other dropdowns to Hawkins */
+@media (max-width: 1036px) {
+  .OverrideHawkins-Dropdown-root .Hawkins-label {
+    display: unset;
+  }
+}
+
+/* bigger text on mobile */
+.OverrideHawkins-Dropdown-root .Hawkins-Text-default {
+  font-size: 1.13rem;
+  color: #8c8c8c !important;
+}
+.OverrideHawkins-Dropdown-chipsContainer {
+  padding: 8px 0;
+  margin: 0 !important;
+}
+/* smaller text on bigger screens */
+@media (min-width: 768px) {
+  .OverrideHawkins-Dropdown-root .Hawkins-Text-default {
+    font-size: 1rem;
+  }
+}
+
+.OverrideHawkins-Base .Hawkins-MenuItem.Mui-selected,
+.OverrideHawkins-Base .Hawkins-MenuItem.Mui-selected:hover {
+  color: #cd070e;
+}
+
+/* Override Hawkins checkbox */
+.OverrideHawkins-Base .Hawkins-MenuItem.Mui-selected > svg {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAddJREFUWAntlM1qAjEQx2eXPoM9Cgt9gYr0AaTXIkKltiD0UC8VLLaH4l16qs+yevFs776B9gG0F0GPmmbCRrJr4uyneNjAmk0mmfn5n52xGB9wRsM+IxaBkgNRGckVOiuF/pZLeGo04Hc+N3Nh2Z9iLBcLdlupMKdYZDflMpvPZtqwJ/mGUJlHrgyHEMpwOLHWKZU5UBBG5soElSmQCUaFGo/HcinmzIAoGIz+0mrBa7udPVBYmM9ezweDi1AKjYZDeKjXYbPZHDgIbiSBEb60tadsDl2XXTmOKNf7Wo2t12vF6n9VSxvLW/d89fv+S4HVUYVQmY9uF7bbrYCfTqfw3GxqlUqsjCe1ESgII1Ojg0oLBmMYgX4mk70yEkbOKlSaMOjfwhTKQOq82+3gnadr5Lrqtu/9ulSC1Wq178A+o7fA0tZVk+4s7hmB0BgGCs+ZRlQY9GNMmTDaNnwPBnBXrZpiGvfjwIiYRo+ewY4BFRcmFJA4FAEqCUxooLBQSWEwDgQaJbnkTZK9dToHXZjqwKRj70BkILwXhEoLBn1fCJki/sgPHa9dFgqR+gwV6mgfoi7zPwSWZVHHItmP9iHKU9owGC8REAUcx54DUarlCuUKUQpQ9n8nf9FeFjjMhAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.OverrideHawkins-Base .Hawkins-MenuItem > svg {
+  border: 1px solid #cfcfcf;
+  width: 1.13rem;
+  height: 1.13rem;
+}
+.OverrideHawkins-Base .Hawkins-MenuItem > svg > path {
+  display: none;
+}
+
+/* Override Hawkins arrow */
+.OverrideHawkins-Base .MuiInput-root > .Hawkins-Icon {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMnB4IiBoZWlnaHQ9IjEwcHgiPjxnIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPiA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNDM2LjAwMDAwMCwgLTQ4LjAwMDAwMCkiIGZpbGw9IiMyMjFGMUYiIGZpbGwtcnVsZT0ibm9uemVybyI+PGc+PHBvbHlnb24gdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDQyLjAwMDAwMCwgNTIuMDAwMDAwKSByb3RhdGUoOTAuMDAwMDAwKSB0cmFuc2xhdGUoLTQ0Mi4wMDAwMDAsIC01Mi4wMDAwMDApICIgcG9pbnRzPSI0MzggNTYuMzA1OTkzNCA0MzkuOTE0NjczIDU4IDQ0NiA1MiA0MzkuOTE0NjczIDQ2IDQzOCA0Ny42OTQwMDY2IDQ0Mi4zNjcyMyA1MiI+PC9wb2x5Z29uPjwvZz48L2c+PC9nPjwvc3ZnPg==');
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 3px);
+  width: 12px;
+  height: 10px;
+}
+
+/* Even spacing */
+.OverrideHawkins-Dropdown-root {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 1.25rem;
+}
+
+/* Related to dropdownPopper */
+.OverrideHawkins-Dropdown-dropdownPopper .Hawkins-MenuItem {
+  padding: 0.94rem 1.19rem;
+}
+.OverrideHawkins-Dropdown-dropdownPopper .Hawkins-Paper {
+  margin: 0px !important;
+}
+.OverrideHawkins-Dropdown-dropdownPopper [role='listbox'] {
+  padding: 15px 0;
+}
+/* Override box shadow */
+.OverrideHawkins-Dropdown-dropdownPopper [role='listbox']::after {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 5%;
+  z-index: -1;
+  border-radius: 40%;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 25%);
+}
+
+/* Make Dropdown Text/Input box look consistent with the existing Dropdowns */
+/* Undo focus effects */
+.OverrideHawkins-Dropdown-root *:focus-within::after,
+.OverrideHawkins-Dropdown-root *:focus-within::after,
+.OverrideHawkins-Dropdown-root *:focus-within,
+.OverrideHawkins-Dropdown-root *::after {
+  border: none;
+}
+.OverrideHawkins-Base .MuiInputBase-root {
+  border-color: unset;
+  border-radius: unset;
+  border: 1px solid #e6e6e6;
+}
+.OverrideHawkins-Base .MuiInputBase-input {
+  display: none;
+}
+.OverrideHawkins-Dropdown-root .MuiInput-root {
+  padding-left: 19px;
+}
+.OverrideHawkins-Dropdown-root .MuiInput-root > .Hawkins-Icon > path {
+  display: none;
+}
+/* 
+Empty CSS file to always include CSS file in build 
+If we moved to using the built-in support it requires all imports to be in _app.js and we can remove this file.
+Without this file, the global css imports cause client side routing to pages with CSS from pages without CSS to not work 🙂
+*/
+

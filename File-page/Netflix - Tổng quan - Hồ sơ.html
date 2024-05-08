@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)https://ir.netflix.net/ir-overview/profile/default.aspx -->
+<html id="9d0bf6559385aab0263db740becbffbc8761135e" class="StudioLegacy Legacy" xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title _msttexthash="4713267" _msthash="0"> Netflix - Tổng quan - Hồ sơ </title><meta content="RevealTrans(Duration=0,Transition=0)" http-equiv="Page-Enter"><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"><meta content="width=device-width, initial-scale=1" name="viewport"><!--[if lte IE 8]>
+<link id="respond-proxy" rel="respond-proxy" media="screen" href="//s22.q4cdn.com/959853165/files/js/respond-proxy.html" />
+<link id="respond-redirect" rel="respond-redirect" media="screen" href="https://ir.netflix.net/js/respond.proxy.gif" />
+<![endif]-->
+
+<link type="text/css" rel="stylesheet" media="all" href="./Netflix - Tổng quan - Hồ sơ_files/css">
+<link type="image/x-icon" rel="icon" media="" href="https://s22.q4cdn.com/959853165/files/favicon.ico">
+<link type="image/x-icon" rel="shortcut icon" media="" href="https://s22.q4cdn.com/959853165/files/favicon.ico">
+<link rel="stylesheet" media="print" href="./Netflix - Tổng quan - Hồ sơ_files/print.css">
+<link id="htmlGlobalLinkCss" type="text/css" rel="stylesheet" media="all" href="./Netflix - Tổng quan - Hồ sơ_files/global.css"><link id="htmlClientLinkCss" type="text/css" rel="stylesheet" media="all" href="./Netflix - Tổng quan - Hồ sơ_files/client.css"><link id="htmlLinkPrintCss" type="text/css" rel="stylesheet" media="print" href="./Netflix - Tổng quan - Hồ sơ_files/print.css"><link id="htmlLinkEvergreenCss" type="text/css" rel="stylesheet" media="all" href="./Netflix - Tổng quan - Hồ sơ_files/evergreen.1.0.0.min.css"><link type="text/css" rel="stylesheet" href="./Netflix - Tổng quan - Hồ sơ_files/GlobalBranding.ashx"><script async="" src="./Netflix - Tổng quan - Hồ sơ_files/analytics.js.tải xuống"></script><script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/evergreen.core.1.0.0.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/evergreen.app.1.0.0.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/evergreen.q4Api.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/evergreen.q4Pager.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/evergreen.q4Slideshow.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/index.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/index(1).js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/q4.core.1.0.2.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/q4.app.1.0.2.min.js.tải xuống"></script>
+<script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/q4.api.1.12.18.min.js.tải xuống"></script>
+<!--[if lte IE 8]>
+<script type="text/javascript" src="https://ir.netflix.net/js/respond.proxy.js"></script>
+<![endif]-->
+
+<script type="text/javascript">function GetGlobalBrandingOptions(){ return '{"dateFormat":{"moment":{"date":"MMMM D, YYYY","time":"h:mm A"},"datePicker":{"date":"MM d, yy"}}}'; }
+</script><script type="text/javascript">var trackingCodes = [{qualifier: 'V4Client', trackingCode: 'G-32XNC7X3QM'}];
+var ipSessStorageKey = 'ipApiInfo';
+// The Q4 Snowplow lib which Q4Blizzard utilises also makes a call to the ip-api and sets the info in LS.
+// So it's beneficial to check there too, to prevent redundant calls to ip-api.
+var q4SnowplowLib_ipLocStorageKey = 'q4spisp';
+var ipJsonStringified = sessionStorage.getItem(ipSessStorageKey) || localStorage.getItem(q4SnowplowLib_ipLocStorageKey);
+
+// Only load google analytics if we have tracking codes configured
+if (trackingCodes.length) {
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+}
+
+(function ($) {
+  const initialisedV4Codes = [];
+
+  function initGaTracking(isp, org) {
+    // Only load google analytics if we have tracking codes configured
+    if (!trackingCodes.length) return;
+
+    isp = isp || '(not set)';
+    org = org || '(not set)';
+    $.each(trackingCodes, function (i, data) {
+      if (data.qualifier === "Q4") {
+        ga('create', data.trackingCode, 'auto'); // Q4 tracker
+        ga('set', { 'dimension1': isp });
+        ga('set', { 'dimension2': org });
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Q4 tracker
+      } else if (data.qualifier === 'V4Client') {
+        // This is to prevent a script tag from being added more than once
+        if (initialisedV4Codes.indexOf(data.trackingCode) === -1) {
+          // Add gtag script to DOM
+          const gtagScriptTag = document.createElement("script");
+          gtagScriptTag.async = true;
+          gtagScriptTag.src = "https://www.googletagmanager.com/gtag/js?id=" + data.trackingCode;
+          document.head.appendChild(gtagScriptTag);
+
+          // Instance this gtag
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          const secureCookieTag = 'SameSite=None;Secure';
+          gtag("js", new Date());
+          gtag('set', {cookie_flags: secureCookieTag});
+          gtag("config", data.trackingCode, { anonymize_ip: true });
+          initialisedV4Codes.push(data.trackingCode);
+        }
+      } else {
+        ga('create', data.trackingCode, 'auto', { 'name': data.qualifier }); // Client tracker
+        ga(data.qualifier + '.set', 'anonymizeIp', true);
+        ga(data.qualifier + '.send', 'pageview', { 'page': location.pathname + location.search + location.hash }); // send pageview to Client tracker
+      }
+    });
+  }
+
+  if (ipJsonStringified) {
+    try {
+      var ipJsonParsed = JSON.parse(ipJsonStringified);
+      initGaTracking(ipJsonParsed.isp, ipJsonParsed.org);
+    } catch (e) {
+      console.error('Failed to JSON parse IP API session storage data\n', e);
+      initGaTracking();
+    }
+  } else {
+    $.getJSON('https://pro.ip-api.com/json/?key=6KddQSe576qrfNb&fields=isp,org')
+      .done(function (ipJson) {
+        sessionStorage.setItem(ipSessStorageKey, JSON.stringify(ipJson));
+        initGaTracking(ipJson.isp, ipJson.org);
+      })
+      .fail(function () {
+        initGaTracking();
+      });
+  }
+})(jQuery || $tudio);
+
+(function () {
+  Q4Blizzard.initProps({
+    appId: "Q4WebNetflix2018ir",
+    collectorUrl: "https://" + window.location.hostname + "/x0k461",
+    cookieName: "__uxq412__",
+    organizationId: "3c24891d-1f81-4752-b7e8-ed556c9f76b4",
+    postPath: "/e6c1b/xc9",
+    productVersion: "5.121.5.3",
+    enableDOMListener: "False"
+  });
+
+  window.addEventListener("load", () => {
+    Q4Tracker.init("True");
+  });
+})();
+</script><script async="" src="./Netflix - Tổng quan - Hồ sơ_files/js"></script></head>
+<body style="margin: 0px" class="BodyBackground">
+    <input name="hdnRedirectToLoginUrl" type="hidden" id="hdnRedirectToLoginUrl" value="https://login.q4inc.com/authorize?client_id=gKrDY1E9BUSWfU7DGuW2CO4rjdskiNg7&amp;pendoQ4PId=_q4pidval_&amp;projectId=studio&amp;step=login&amp;companyName=Netflix&amp;projectIdentifier=Netflix&amp;mainColor=%230F5CA3&amp;scope=openid+profile+email&amp;helpUrl=https%3a%2f%2fhelp.events.q4inc.com%2fen%2fir-website.html&amp;response_type=code&amp;response_mode=query&amp;nonce=3mua70vYfy2ObufDNCmafsLVM&amp;skipUrl=https%3a%2f%2fir.netflix.net%2fir-overview%2fprofile%2fdefault.aspx&amp;userEmail=_q4lemail_&amp;redirect_uri=https%3a%2f%2fauth.platform.q4inc.com%2fauth%2fpublicAuthRedirect%3fstate%3deyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJyZXR1cm5VcmwiOiJodHRwczovL2lyLm5ldGZsaXgubmV0L2lyLW92ZXJ2aWV3L3Byb2ZpbGUvZGVmYXVsdC5hc3B4IiwiZXhwIjoxNzIwMzc2NTQ5LjAsImlhdCI6MTcxNTExNjk0OS4wLCJpc3MiOiJRNC5XZWIuUHVibGljLlNpdGUiLCJhdWQiOiJ1cHN0cmVhbS5jZG4ud2ViLnByZC5xNGluYy5jb20ifQ.1-J3DtMJThy-QKqLi0fn18Oo9Vw7b_0uXVPOdf05G3U">
+
+    <input type="hidden" id="__RequestVerificationToken">
+    
+    
+    <div id="pageClass" class="Sectionir-overview PageDefault PageOverviewProfile LayoutHomePageLayout Languageen-US page--no-padding">
+        <div class="PageDefaultInner">
+            <div id="litPageDiv" class="PageOverviewProfile SectionOverviewProfile ParentSection_ir-overview">
+                
+                <form action="https://ir.netflix.net/ir-overview/profile/default.aspx" method="post" id="fmForm1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['fmForm1'];
+if (!theForm) {
+    theForm = document.fmForm1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+function GetViewType(){ return '2'; }
+function GetRevisionNumber(){ return '1'; }
+function GetLanguageId(){ return '1'; }
+function GetVersionNumber(){ return '5.121.5.3'; }
+function GetPoweredBy(){return 'q4inc';}
+function GetViewDate(){{ return ''; }}
+function GetSignature(){{ return ''; }}
+//]]>
+</script>
+
+                    
+                    
+                    
+<div class="layout layout--home">
+    <div class="layout_inner">
+        <div class="layout_header">
+            <div class="pane pane--header grid--no-gutter">
+                <div class="pane_inner"><span class="HeaderPaneDiv"><span class="HeaderPaneDiv1"><div id="_ctrl0_ctl06_divModuleContainer" class="module module-embed module-skip">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a class="module-skip_link" href="https://ir.netflix.net/ir-overview/profile/default.aspx#maincontent" _msttexthash="357760" _msthash="1">Skip to main content</a>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv2"><div id="_ctrl0_ctl09_divModuleContainer" class="module module-embed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script type="text/javascript">
+var Q4ApiKey = 'BF185719B0464B3CB809D23926182246';
+</script>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv3"><div id="_ctrl0_ctl12_divModuleContainer" class="module module-embed module-mobile-search-toggle">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_search"></i>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv4"><div id="_ctrl0_ctl15_divModuleContainer" class="module module-embed module-logo grid_col grid_col--1-of-4 grid_col--lc-1-of-2 grid_col--md-1-of-2 grid_col--sm-3-of-4">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx"><img src="./Netflix - Tổng quan - Hồ sơ_files/logo.png" alt="Netflix" _mstalt="96538" _msthash="2"></a>
+<span _msttexthash="1318213" _msthash="3">Nhà đầu tư</span>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv5"><nav class="nav nav--main grid_col grid_col--3-of-4"><ul class="level1 sf-js-enabled" style="touch-action: pan-y;">
+	<li class="has-children expanded"><a href="https://ir.netflix.net/ir-overview/profile/default.aspx" class="sf-with-ul" _msttexthash="925600" _msthash="4">Tổng quan</a><ul class="level2" style="display: none;" _msthidden="6">
+		<li class="selected" _msthidden="1"><a href="https://ir.netflix.net/ir-overview/profile/default.aspx" _msttexthash="94315" _msthidden="1" _msthash="5">Profile</a></li><li _msthidden="1"><a href="https://ir.netflix.net/ir-overview/long-term-view/default.aspx" _msttexthash="217451" _msthidden="1" _msthash="6">Long-Term View</a></li><li _msthidden="1"><a href="https://ir.netflix.net/ir-overview/top-investor-questions/default.aspx" _msttexthash="464152" _msthidden="1" _msthash="7">Top Investor Questions</a></li><li _msthidden="1"><a href="https://s22.q4cdn.com/959853165/files/doc_downloads/2023/06/27/IR-Content-Accounting-Slides-June-2023.pdf" target="_blank" _msttexthash="655720" _msthidden="1" _msthash="8">Content Accounting Overview</a></li><li _msthidden="1"><a href="https://jobs.netflix.com/culture" target="_blank" _msttexthash="261443" _msthidden="1" _msthash="9">Netflix Culture</a></li><li _msthidden="1"><a href="https://about.netflix.com/en" _msttexthash="204880" _msthidden="1" _msthash="10">About Netflix</a></li>
+	</ul></li><li class="has-children"><a href="https://ir.netflix.net/financials/quarterly-earnings/default.aspx" class="sf-with-ul" _msttexthash="145457" _msthash="11">Tài chính</a><ul class="level2" style="display: none;" _mstvisible="0">
+		<li _mstvisible="1"><a href="https://ir.netflix.net/financials/quarterly-earnings/default.aspx" _msttexthash="1534689" _msthash="12" _mstvisible="2">Thu nhập hàng quý</a></li><li _mstvisible="1"><a href="https://ir.netflix.net/financials/financial-statements/default.aspx" _msttexthash="338845" _msthash="13" _mstvisible="2">Báo cáo tài chính</a></li><li _mstvisible="1"><a href="https://ir.netflix.net/financials/annual-reports-and-proxies/default.aspx" _msttexthash="2291718" _msthash="14" _mstvisible="2">Báo cáo thường niên &amp;; Proxy</a></li><li _mstvisible="1"><a href="https://ir.netflix.net/financials/sec-filings/default.aspx" _msttexthash="928837" _msthash="15" _mstvisible="2">Hồ sơ SEC</a></li>
+	</ul></li><li class="has-children"><a href="https://ir.netflix.net/investor-news-and-events/financial-releases/default.aspx" class="sf-with-ul" _msttexthash="4897360" _msthash="16">Tin tức &amp;; Sự kiện</a><ul class="level2" style="display: none;" _msthidden="2">
+		<li _msthidden="1"><a href="https://ir.netflix.net/investor-news-and-events/financial-releases/default.aspx" _msttexthash="339885" _msthidden="1" _msthash="17">Financial Releases</a></li><li _msthidden="1"><a href="https://ir.netflix.net/investor-news-and-events/investor-events/default.aspx" _msttexthash="263679" _msthidden="1" _msthash="18">Investor Events</a></li>
+	</ul></li><li class="has-children"><a href="https://ir.netflix.net/stock-information/stock-quote/default.aspx" class="sf-with-ul" _msttexthash="2162342" _msthash="19">Thông tin chứng khoán</a><ul class="level2" style="display: none;" _msthidden="4">
+		<li _msthidden="1"><a href="https://ir.netflix.net/stock-information/stock-quote/default.aspx" _msttexthash="157014" _msthidden="1" _msthash="20">Stock Quote</a></li><li _msthidden="1"><a href="https://ir.netflix.net/stock-information/stock-chart/default.aspx" _msttexthash="152815" _msthidden="1" _msthash="21">Stock Chart</a></li><li _msthidden="1"><a href="https://ir.netflix.net/stock-information/historical-stock-quote/default.aspx" _msttexthash="449280" _msthidden="1" _msthash="22">Historical Stock Quote</a></li><li _msthidden="1"><a href="https://ir.netflix.net/stock-information/investment-calculator/default.aspx" _msttexthash="454493" _msthidden="1" _msthash="23">Investment Calculator</a></li>
+	</ul></li><li class="has-children"><a href="https://ir.netflix.net/governance/Leadership-and-directors/default.aspx" class="sf-with-ul" _msttexthash="9649029" _msthash="24">Môi trường, Xã hội &amp;; Quản trị</a><ul class="level2" style="display: none;" _msthidden="4">
+		<li _msthidden="1"><a href="https://ir.netflix.net/governance/Leadership-and-directors/default.aspx" _msttexthash="437138" _msthidden="1" _msthash="25">Leadership &amp; Directors</a></li><li _msthidden="1"><a href="https://ir.netflix.net/governance/ESG/default.aspx" _msttexthash="251511" _msthidden="1" _msthash="26">ESG Information</a></li><li _msthidden="1"><a href="https://ir.netflix.net/governance/governance-docs/default.aspx" _msttexthash="250484" _msthidden="1" _msthash="27">Governance Docs</a></li><li _msthidden="1"><a href="https://ir.netflix.net/governance/committee-membership/default.aspx" _msttexthash="413933" _msthidden="1" _msthash="28">Committee Membership</a></li>
+	</ul></li><li class="has-children"><a href="https://ir.netflix.net/resources/investor-contacts/default.aspx" class="sf-with-ul" _msttexthash="174993" _msthash="29">Tài nguyên</a><ul class="level2" style="display: none;" _msthidden="6">
+		<li _msthidden="1"><a href="https://about.netflix.com/en/newsroom" target="_blank" _msttexthash="118690" _msthidden="1" _msthash="30">Newsroom</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/email-alerts/default.aspx" _msttexthash="176605" _msthidden="1" _msthash="31">Email Alerts</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/investor-contacts/default.aspx" _msttexthash="320931" _msthidden="1" _msthash="32">Investor Contacts</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/social-media-disclosure/default.aspx" _msttexthash="479960" _msthidden="1" _msthash="33">Social Media Disclosure</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/EEO-1-Reports/default.aspx" _msttexthash="183703" _msthidden="1" _msthash="34">EEO-1 Reports</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/Political-Activity-Disclosures/default.aspx" _msttexthash="794404" _msthidden="1" _msthash="35">Political Activity Disclosures</a></li>
+	</ul></li>
+</ul></nav></span><span class="HeaderPaneDiv6"><div id="_ctrl0_ctl21_divModuleContainer" class="module module-embed layout_toggle ">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_hamburger" tabindex="0"></i>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv7"><div id="_ctrl0_ctl24_divModuleContainer" class="module module-search" role="search">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <span id="_ctrl0_ctl24_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl24$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl24_txtSearchInput" class="module_input module-search_input" aria-label="Truy vấn tìm kiếm" placeholder="Tìm kiếm theo từ khóa" value="" _mstplaceholder="294008" _msthash="36" _mstaria-label="185146">
+            <input type="submit" name="_ctrl0$ctl24$btnSearch" value="" id="_ctrl0_ctl24_btnSearch" class="module_button module-search_button" _mstvalue="5429879" _msthash="37">
+            
+            <span class="q4-icon_close"></span>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv8"><div id="_ctrl0_ctl27_divModuleContainer" class="module module-html module-contrast">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_accessibility module-contrast_button"></i>
+        </div>
+    </div>
+</div></span><span class="HeaderPaneDiv11" _msthidden="1"><div id="_ctrl0_ctl30_divModuleContainer" class="module module-search module-mobile-search" role="search" _msthidden="1">
+    <div class="module_container module_container--outer" _msthidden="1">
+        
+        <div class="module_container module_container--inner" _msthidden="1">
+            <span id="_ctrl0_ctl30_lblSearchText" class="module-search_text"></span>
+            <input name="_ctrl0$ctl30$txtSearchInput" type="text" maxlength="256" id="_ctrl0_ctl30_txtSearchInput" class="module_input module-search_input" aria-label="Search query" placeholder="Search by keyword" value="" _msthidden="A" _mstplaceholder="294008" _msthash="38" _mstaria-label="185146">
+            <input type="submit" name="_ctrl0$ctl30$btnSearch" value="" id="_ctrl0_ctl30_btnSearch" class="module_button module-search_button" _msthidden="A" _mstvalue="5429879" _msthash="39">
+            
+            <span class="q4-icon_close"></span>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--banner grid--no-gutter">
+                <div class="pane_inner"><span class="HeaderPane2Div1"><div id="_ctrl0_ctl51_divModuleContainer" class="module module-embed module-home-slider grid_col grid_col--3-of-5 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <div class="module_item-wrap">
+    <div><div class="module-slider_title">
+            <h1 _msttexthash="1032226" _msthash="40">Hồ sơ công ty</h1>
+        </div>
+        <div class="module-slider_description">
+           	<!-- <p>Netflix is one of the world's leading entertainment services with over 260 million paid memberships in over 190 countries enjoying TV series, films and games across a wide variety of genres and languages. Members can play, pause and resume watching as much as they want, anytime, anywhere, and can change their plans at any time. </p> -->
+            <p _msttexthash="581024743" _msthash="41"> Netflix là một trong những dịch vụ giải trí hàng đầu thế giới với 270 triệu thành viên trả phí tại hơn 190 quốc gia thưởng thức phim truyền hình, phim và trò chơi trên nhiều thể loại và ngôn ngữ khác nhau. Các thành viên có thể phát, tạm dừng và tiếp tục xem bao nhiêu tùy thích, mọi lúc, mọi nơi và có thể thay đổi kế hoạch của họ bất cứ lúc nào. </p>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div></span><span class="HeaderPane2Div2"><div id="_ctrl0_ctl54_divModuleContainer" class="module module-embed module-stock-header grid_col grid_col--2-of-5 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner"><span class="module-stock-header_description1" _msttexthash="127244" _msthash="42">NASDAQ:  NFLX</span><span class="module-stock-header_stock-price" _msttexthash="36556" _msthash="43">606.00</span><span class="module-stock-header_change module-stock-header_up"><span class="module-stock-header_indicator">+</span><font _mstmutation="1" _msttexthash="79313" _msthash="44">9.03 ( 1.51% )</font></span><span class="module-stock-header_volume-text" _msttexthash="88361" _msthidden="1" _msthash="45">Volume: </span><span class="module-stock-header_volume" _msttexthash="62738" _msthash="46">3,610,221</span><span class="module-stock-header_description3" _msttexthash="1579396" _msthash="47">Giá bị trì hoãn 20 phút</span><span class="module-stock-header_date" _msttexthash="6004947" _msthash="48">Cập nhật Lần cuối: 05/07/24 4:00 PM</span></div>
+    </div>
+</div></span></div>
+            </div>
+            <div class="pane pane--navigation" _msthidden="32">
+                <div class="pane_inner" _msthidden="32"><span class="NavigationPaneDiv12"><div id="_ctrl0_ctl33_divModuleContainer" class="module module-embed module-close-nav">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <i class="q4-icon_close-mobile"></i>
+        </div>
+    </div>
+</div></span><span class="NavigationPaneDiv13" _msthidden="32"><nav class="nav nav--secondary" _msthidden="32"><ul class="level1" _msthidden="32">
+	<li class="has-children expanded" _msthidden="7"><a href="https://ir.netflix.net/ir-overview/profile/default.aspx" _msttexthash="118079" _msthidden="1" _msthash="49">Overview</a><ul class="level2" _msthidden="6">
+		<li class="selected" _msthidden="1"><a href="https://ir.netflix.net/ir-overview/profile/default.aspx" _msttexthash="94315" _msthidden="1" _msthash="50">Profile</a></li><li _msthidden="1"><a href="https://ir.netflix.net/ir-overview/long-term-view/default.aspx" _msttexthash="217451" _msthidden="1" _msthash="51">Long-Term View</a></li><li _msthidden="1"><a href="https://ir.netflix.net/ir-overview/top-investor-questions/default.aspx" _msttexthash="464152" _msthidden="1" _msthash="52">Top Investor Questions</a></li><li _msthidden="1"><a href="https://s22.q4cdn.com/959853165/files/doc_downloads/2023/06/27/IR-Content-Accounting-Slides-June-2023.pdf" target="_blank" _msttexthash="655720" _msthidden="1" _msthash="53">Content Accounting Overview</a></li><li _msthidden="1"><a href="https://jobs.netflix.com/culture" target="_blank" _msttexthash="261443" _msthidden="1" _msthash="54">Netflix Culture</a></li><li _msthidden="1"><a href="https://about.netflix.com/en" _msttexthash="204880" _msthidden="1" _msthash="55">About Netflix</a></li>
+	</ul></li><li class="has-children" _msthidden="5"><a href="https://ir.netflix.net/financials/quarterly-earnings/default.aspx" _msttexthash="154323" _msthidden="1" _msthash="56">Financials</a><ul class="level2" _msthidden="4">
+		<li _msthidden="1"><a href="https://ir.netflix.net/financials/quarterly-earnings/default.aspx" _msttexthash="351377" _msthidden="1" _msthash="57">Quarterly Earnings</a></li><li _msthidden="1"><a href="https://ir.netflix.net/financials/financial-statements/default.aspx" _msttexthash="416013" _msthidden="1" _msthash="58">Financial Statements</a></li><li _msthidden="1"><a href="https://ir.netflix.net/financials/annual-reports-and-proxies/default.aspx" _msttexthash="477646" _msthidden="1" _msthash="59">Annual Reports &amp; Proxies</a></li><li _msthidden="1"><a href="https://ir.netflix.net/financials/sec-filings/default.aspx" _msttexthash="145301" _msthidden="1" _msthash="60">SEC Filings</a></li>
+	</ul></li><li class="has-children" _msthidden="3"><a href="https://ir.netflix.net/investor-news-and-events/financial-releases/default.aspx" _msttexthash="171990" _msthidden="1" _msthash="61">News &amp; Events</a><ul class="level2" _msthidden="2">
+		<li _msthidden="1"><a href="https://ir.netflix.net/investor-news-and-events/financial-releases/default.aspx" _msttexthash="339885" _msthidden="1" _msthash="62">Financial Releases</a></li><li _msthidden="1"><a href="https://ir.netflix.net/investor-news-and-events/investor-events/default.aspx" _msttexthash="263679" _msthidden="1" _msthash="63">Investor Events</a></li>
+	</ul></li><li class="has-children" _msthidden="5"><a href="https://ir.netflix.net/stock-information/stock-quote/default.aspx" _msttexthash="130962" _msthidden="1" _msthash="64">Stock Info</a><ul class="level2" _msthidden="4">
+		<li _msthidden="1"><a href="https://ir.netflix.net/stock-information/stock-quote/default.aspx" _msttexthash="157014" _msthidden="1" _msthash="65">Stock Quote</a></li><li _msthidden="1"><a href="https://ir.netflix.net/stock-information/stock-chart/default.aspx" _msttexthash="152815" _msthidden="1" _msthash="66">Stock Chart</a></li><li _msthidden="1"><a href="https://ir.netflix.net/stock-information/historical-stock-quote/default.aspx" _msttexthash="449280" _msthidden="1" _msthash="67">Historical Stock Quote</a></li><li _msthidden="1"><a href="https://ir.netflix.net/stock-information/investment-calculator/default.aspx" _msttexthash="454493" _msthidden="1" _msthash="68">Investment Calculator</a></li>
+	</ul></li><li class="has-children" _msthidden="5"><a href="https://ir.netflix.net/governance/Leadership-and-directors/default.aspx" _msttexthash="881244" _msthidden="1" _msthash="69">Environmental, Social &amp; Governance</a><ul class="level2" _msthidden="4">
+		<li _msthidden="1"><a href="https://ir.netflix.net/governance/Leadership-and-directors/default.aspx" _msttexthash="437138" _msthidden="1" _msthash="70">Leadership &amp; Directors</a></li><li _msthidden="1"><a href="https://ir.netflix.net/governance/ESG/default.aspx" _msttexthash="251511" _msthidden="1" _msthash="71">ESG Information</a></li><li _msthidden="1"><a href="https://ir.netflix.net/governance/governance-docs/default.aspx" _msttexthash="250484" _msthidden="1" _msthash="72">Governance Docs</a></li><li _msthidden="1"><a href="https://ir.netflix.net/governance/committee-membership/default.aspx" _msttexthash="413933" _msthidden="1" _msthash="73">Committee Membership</a></li>
+	</ul></li><li class="has-children" _msthidden="7"><a href="https://ir.netflix.net/resources/investor-contacts/default.aspx" _msttexthash="137904" _msthidden="1" _msthash="74">Resources</a><ul class="level2" _msthidden="6">
+		<li _msthidden="1"><a href="https://about.netflix.com/en/newsroom" target="_blank" _msttexthash="118690" _msthidden="1" _msthash="75">Newsroom</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/email-alerts/default.aspx" _msttexthash="176605" _msthidden="1" _msthash="76">Email Alerts</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/investor-contacts/default.aspx" _msttexthash="320931" _msthidden="1" _msthash="77">Investor Contacts</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/social-media-disclosure/default.aspx" _msttexthash="479960" _msthidden="1" _msthash="78">Social Media Disclosure</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/EEO-1-Reports/default.aspx" _msttexthash="183703" _msthidden="1" _msthash="79">EEO-1 Reports</a></li><li _msthidden="1"><a href="https://ir.netflix.net/resources/Political-Activity-Disclosures/default.aspx" _msttexthash="794404" _msthidden="1" _msthash="80">Political Activity Disclosures</a></li>
+	</ul></li>
+</ul></nav></span></div>
+            </div>
+        </div>
+        <div class="layout_content" id="maincontent">
+            <div class="pane pane--breadcrumb">
+                <div class="pane_inner"></div>
+            </div>
+            <div class="pane pane--left grid--no-gutter">
+                <div class="pane_inner"><span class="LeftPaneDiv"><span class="LeftPaneDiv3"><div id="_ctrl0_ctl57_divModuleContainer" class="module module-embed module-event-latest list--reset module_links--divider grid_col grid_col--1-of-2 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl57_lblTitle" class="module_title"><span id="_ctrl0_ctl57_lblModuleTitle" class="ModuleTitle" _msttexthash="5055557" _msthash="81">Sự kiện dành cho nhà đầu tư</span></h2>
+        <div class="module_container module_container--inner">
+            <div class="module_rss module_rss--top module_q4-icon-links">
+    <a href="https://ir.netflix.net/rss/Event.aspx" class="module_rss-link" target="_blank">
+        <span class="sr-only" _msttexthash="20988344" _msthash="82">Nguồn cấp RSS Sự kiện (mở trong cửa sổ mới)</span>
+
+    </a>
+</div>
+<div class="module_container module_container--content"><div><div class="module_item"><div class="module_item-wrap"><div class="module_headline"><a class="module_headline-link" href="https://ir.netflix.net/investor-news-and-events/investor-events/event-details/2024/Annual-Meeting-of-Stockholders-of-Netflix-Inc-2024-D712XjGAKV/default.aspx" _msttexthash="15158689" _msthash="83">Cuộc họp thường niên của các cổ đông của Netflix, Inc.</a></div><div class="module_date-time" _msttexthash="436761" _msthash="84"><span class="module_date-text" _istranslated="1">Tháng Sáu 6, 2024</span><span class="module_time-text" _istranslated="1">03: 00 PM PST</span></div><div class="module_links module_q4-icon-links"><div class="module_add-to-calendar"><span class="module_link module_add-to-calendar-reveal" tabindex="0"><span _msttexthash="1725178" _msthash="85">Thêm vào Lịch</span></span><ul class="module_add-to-calendar-list" _msthidden="4"><li class="module_add-to-calendar-item module_add-to-calendar-item--apple" _msthidden="1"><a href="https://ir.netflix.net/DownloadICal.aspx?id=1091" target="_blank" class="module_add-to-calendar-link" _msthidden="1"><i class="q4-icon_apple"></i><span class="module_add-to-calendar-text sr-only" _msttexthash="364130" _msthidden="1" _msthash="86">Add to Apple Calendar</span></a></li><li class="module_add-to-calendar-item module_add-to-calendar-item--google" _msthidden="1"><a href="https://ir.netflix.net/DownloadICal.aspx?id=1091&amp;platform=GoogleCalendar" target="_blank" class="module_add-to-calendar-link" _msthidden="1"><i class="q4-icon_google"></i><span class="module_add-to-calendar-text sr-only" _msttexthash="397839" _msthidden="1" _msthash="87">Add to Google Calendar</span></a></li><li class="module_add-to-calendar-item module_add-to-calendar-item--outlook" _msthidden="1"><a href="https://ir.netflix.net/DownloadICal.aspx?id=1091" target="_blank" class="module_add-to-calendar-link" _msthidden="1"><i class="q4-icon_microsoft"></i><span class="module_add-to-calendar-text sr-only" _msttexthash="493363" _msthidden="1" _msthash="88">Add to Microsoft Outlook</span></a></li><li class="module_add-to-calendar-item module_add-to-calendar-item--ics" _msthidden="1"><a href="https://ir.netflix.net/DownloadICal.aspx?id=1091" target="_blank" class="module_add-to-calendar-link" _msthidden="1"><i class="q4-icon_calendar"></i><span class="module_add-to-calendar-text sr-only" _msttexthash="247702" _msthidden="1" _msthash="89">Add to iCalendar</span></a></li></ul></div><div class="module_webcast"><a class="module_link module_webcast-link" href="https://www.virtualshareholdermeeting.com/NFLX2024" target="_blank"><span class="module_link-text" _msttexthash="3393221" _msthash="90">Phát trực tuyến</span><span class="sr-only" _msttexthash="6913348" _msthash="91">(Mở trong cửa sổ mới)</span></a></div><ul class="module_attachments"></ul></div></div></div><div class="module_item"><div class="module_item-wrap"><div class="module_headline"><a class="module_headline-link" href="https://ir.netflix.net/investor-news-and-events/investor-events/event-details/2024/Netflix-First-Quarter-2024-Earnings-Interview-2024-elLzUHd2U3/default.aspx" _msttexthash="8900125" _msthash="92">Phỏng vấn thu nhập quý I năm 2024 của Netflix</a></div><div class="module_date-time" _msttexthash="462215" _msthash="93"><span class="module_date-text" _istranslated="1">Tháng Tư 18, 2024</span><span class="module_time-text" _istranslated="1">01: 45 PM PST</span></div><div class="module_links module_q4-icon-links"><ul class="module_attachments"><li class="module_attachment Video"><a href="https://www.youtube.com/embed/KwKyyB0TK5A" target="_blank" class="module_link module_attachment-link" data-fancybox="" savefrom_lm_index="0" savefrom_lm="1"><span _msttexthash="3461783" _msthash="94">Video phỏng vấn</span> <span class="sr-only" _msttexthash="6913348" _msthash="95">(Mở trong cửa sổ mới)</span></a><span style="padding: 0; margin: 0; margin-left: 5px;"><a href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fembed%2FKwKyyB0TK5A&amp;utm_source=chrome&amp;utm_medium=extensions&amp;utm_campaign=link_modifier" target="_blank" title="Get a direct link" savefrom_lm="1" savefrom_lm_is_link="1" style="background-image: url(&quot;data:image/gif;base64,R0lGODlhEAAQAOZ3APf39+Xl5fT09OPj4/Hx8evr6/3+/u7u7uDh4OPi497e3t7e3/z8/P79/X3GbuXl5ubl5eHg4WzFUfb39+Pj4lzGOV7LOPz7+/n6+vn5+ZTLj9/e387Ozt7f3/7+/vv7/ISbePn5+m/JV1nRKXmVbkCnKVrSLDqsCuDh4d/e3uDn3/z7/H6TdVeaV1uSW+bn5v39/eXm5eXm5kyHP/f39pzGmVy7J3yRd9/f3mLEKkXCHJbka2TVM5vaZn6Wdfn6+YG/c/r5+ZO/jeLi41aHTIeageLn4f39/vr6+kzNG2PVM5i+lomdf2CXYKHVmtzo2YXNeDqsBebl5uHh4HDKWN3g3kKqEH6WeZHTXIPKdnSPbv79/pfmbE7PHpe1l4O8dTO5DODg4VDLIlKUUtzo2J7SmEWsLlG4NJbFjkrJHP7+/VK5Nfz8+zmnC3KKa+Hg4OHh4Y63j/3+/eDg4Ojo6P///8DAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAHcALAAAAAAQABAAAAfWgHd2g4SFhYJzdYqLjIpzgx5bBgYwHg1Hk2oNDXKDFwwfDF5NLmMtcStsn4MhGT8YS04aGmU1QRhIGYMTADQAQlAODlloAMYTgwICRmRfVBISIkBPKsqDBAREZmcVFhYVayUz2IMHB1dWOmImI2lgUVrmgwUFLzdtXTxKSSduMfSD6Aik48MGlx05SAykM0gKhAAPAhTB0oNFABkPHg5KMIBCxzlMQFQZMGBIggSDpsCJgGDOmzkIUCAIM2dOhEEcNijQuQDHgg4KOqRYwMGOIENIB90JBAA7&quot;); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; border: none; text-decoration: none; padding: 0px; position: relative;"></a></span></li><li class="module_attachment Document"><a href="https://s22.q4cdn.com/959853165/files/doc_financials/2024/q1/FINAL-Q1-24-Shareholder-Letter.pdf" target="_blank" class="module_link module_attachment-link"><span _msttexthash="2836561" _msthash="96">Thư gửi cổ đông</span> <span class="sr-only" _msttexthash="6913348" _msthash="97">(Mở trong cửa sổ mới)</span></a></li><li class="module_attachment Document"><a href="https://s22.q4cdn.com/959853165/files/doc_financials/2024/q1/Q1-24-Website-Financials.xlsx" target="_blank" class="module_link module_attachment-link"><span _msttexthash="338845" _msthash="98">Báo cáo tài chính</span> <span class="sr-only" _msttexthash="6913348" _msthash="99">(Mở trong cửa sổ mới)</span></a></li><li class="module_attachment Document"><a href="https://s22.q4cdn.com/959853165/files/doc_downloads/2024/4/netflix-inc-_earnings-call_2024-04-18_english.pdf" target="_blank" class="module_link module_attachment-link"><span _msttexthash="161382" _msthash="100">Transcript</span> <span class="sr-only" _msttexthash="6913348" _msthash="101">(Mở trong cửa sổ mới)</span></a></li></ul></div></div></div></div></div>
+<a class="module-event-latest_all" href="https://ir.netflix.net/investor-news-and-events/investor-events/default.aspx"><font _mstmutation="1" _msttexthash="5031195" _msthash="102">Tất cả sự kiện</font><i class="q4-icon_arrow-right"></i></a>
+<script>
+$('.module-event-latest .module_container--content').events({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    dateFormat: {
+        date: 'MMM D, YYYY',
+        time: 'hh:mm A'
+    },
+    useMoment: true,
+    showAllYears: true,
+    limit: 2,
+    template: (
+        /* beautify preserve:start */
+        '{{#items}}' +
+            '<div class="module_item">' +
+                '<div class="module_item-wrap">' +
+                    '<div class="module_headline">' +
+                        '<a class="module_headline-link" href="{{url}}">{{title}}</a>' +
+                    '</div>' +
+                    '<div class="module_date-time">' +
+                        '{{#isFuture}}' +
+                           // '<span class="module_upcoming-text">Upcoming Event</span>' +
+                    //  '<span class="module_upcoming-divider"></span>' +
+                        '{{/isFuture}}'  +
+                    '<span class="module_date-text">{{date.date}}</span>' +
+                    '<span class="module_time-text">{{date.time}} {{timeZone}}</span>'  +
+                    '</div>' +
+                    '<div class="module_links module_q4-icon-links">' +
+                        '{{#isFuture}}' +
+                            '<div class="module_add-to-calendar">' +
+                                '<span class="module_link module_add-to-calendar-reveal" tabindex="0"><span>Add to Calendar</span></span>' +
+                                '<ul class="module_add-to-calendar-list">' +
+                                    '<li class="module_add-to-calendar-item module_add-to-calendar-item--apple">' +
+                                        '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                            '<i class="q4-icon_apple"></i>' +
+                                            '<span class="module_add-to-calendar-text sr-only">Add to Apple Calendar</span>' +
+                                        '</a>' +
+                                    '</li>' +
+                                    '<li class="module_add-to-calendar-item module_add-to-calendar-item--google">' +
+                                        '<a href="/DownloadICal.aspx?id={{id}}&platform=GoogleCalendar" target="_blank" class="module_add-to-calendar-link">' +
+                                            '<i class="q4-icon_google"></i>' +
+                                            '<span class="module_add-to-calendar-text sr-only">Add to Google Calendar</span>' +
+                                        '</a>' +
+                                    '</li>' +
+                                    '<li class="module_add-to-calendar-item module_add-to-calendar-item--outlook">' +
+                                        '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                            '<i class="q4-icon_microsoft"></i>' +
+                                            '<span class="module_add-to-calendar-text sr-only">Add to Microsoft Outlook</span>' +
+                                        '</a>' +
+                                    '</li>' +
+                                    '<li class="module_add-to-calendar-item module_add-to-calendar-item--ics">' +
+                                        '<a href="/DownloadICal.aspx?id={{id}}" target="_blank" class="module_add-to-calendar-link">' +
+                                            '<i class="q4-icon_calendar"></i>' +
+                                            '<span class="module_add-to-calendar-text sr-only">Add to iCalendar</span>' +
+                                        '</a>' +
+                                    '</li>' +
+                                '</ul>' +
+                            '</div>' +
+                        '{{/isFuture}}' +
+                        '{{#webcast}}' +
+                            '<div class="module_webcast">' +
+                                '<a class="module_link module_webcast-link" href="{{webcast}}" target="_blank">' +
+                                    '<span class="module_link-text">Webcast</span>' +
+                                    '<span class="sr-only">(opens in new window)</span>'+
+                                '</a>' +
+                            '</div>' +
+                        '{{/webcast}}' +
+                        '{{#presentations}}' +
+                            '<div class="module_presentation"><a href="{{docUrl}}" target="_blank" class="module_link module_presentation-link">View this Presentation <span class="sr-only">(opens in new window)</span></a></div>' +
+                        '{{/presentations}}' +
+                        '{{#pressReleases}}' +
+                            '<div class="module_news"><a href="{{url}}" target="_blank" class="module_link module_news-link">Press Release <span class="sr-only">(opens in new window)</span></a></div>' +
+                        '{{/pressReleases}}' +
+                            '<ul class="module_attachments">' +
+                                '{{#docs}}' +
+                                    '<li class="module_attachment {{type}}">' +
+                                        '<a href="{{url}}" target="_blank" class="module_link module_attachment-link"><span>{{title}}</span> <span class="sr-only">(opens in new window)</span></a>' +
+                                    '</li>' +
+                                '{{/docs}}' +
+                            '</ul>' +
+                        '{{#financialReports}}' +
+                            '<ul class="module_financials">' +
+                                '{{#docs}}' +
+                                    '<li class="module_financials {{docCategory}}">' +
+                                        '<a href="{{docUrl}}" target="_blank" class="module_link module_financial-link"> <span>{{docTitle}}</span> <span class="sr-only">(opens in new window)</span></a>' +
+                                    '</li>' +
+                                '{{/docs}}' +
+                            '</ul>' +
+                        '{{/financialReports}}' +                        
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+        '{{/items}}'
+        /* beautify preserve:end */
+    ),
+    complete: function(e) {
+        q4App.addToCalendar($(e.target).find('.module_add-to-calendar'));
+        
+        // $('.module-event-latest .module_item:contains("Test Event") .module_item-wrap .module_links .module_add-to-calendar').remove();
+        // $('.module-event-latest .module_item:contains("Test Event") .module_item-wrap .module_links .module_attachments').html(
+        //     '<li class="module_attachment Video">' + 
+        //         '<a data-fancybox="" href="https://www.youtube.com/embed/v5EjcFtq_bc?si=59LrPFrW68Cc30uC" class="module_link module_attachment-link">'+
+        //         '<span>Video Interview Option 1</span> '+
+        //         '<span class="sr-only">(opens in new window)</span>'+
+        //         '</a>'+
+        //     '</li>'
+            // '<li class="module_attachment Video">' + 
+            //     '<a href="/investor-news-and-events/investor-events/event-details/2024/Test" class="module_link module_attachment-link">'+
+            //     '<span>Video Interview Option 2</span> '+
+            //     '<span class="sr-only">(opens in new window)</span>'+
+            //     '</a>'+
+            // '</li>'
+        // );
+        $('.module-event-latest .module_item:contains("Netflix First Quarter 2024 Earnings Interview") .module_item-wrap .module_links .module_attachment.Video a').attr('data-fancybox','');
+        
+    
+        },
+    });
+</script>
+
+
+        </div>
+    </div>
+</div></span><span class="LeftPaneDiv4"><div id="_ctrl0_ctl60_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl60_divModuleContainer" class="module module-links module-investor-kit list--reset grid_col grid_col--1-of-2 grid_col--md-1-of-1">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl60_lblTitle" class="module_title"><span id="_ctrl0_ctl60_lblModuleTitle" class="ModuleTitle" _msttexthash="5674708" _msthash="103">Bộ công cụ dành cho nhà đầu tư</span></h2>
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl60_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://ir.netflix.net/ir-overview/long-term-view/default.aspx" id="_ctrl0_ctl60_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self" _msttexthash="2889731" _msthash="104">Tầm nhìn dài hạn</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://ir.netflix.net/ir-overview/top-investor-questions/default.aspx" id="_ctrl0_ctl60_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self" _msttexthash="8680373" _msthash="105">Câu hỏi hàng đầu của nhà đầu tư</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl02_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://s22.q4cdn.com/959853165/files/doc_downloads/2023/06/27/IR-Content-Accounting-Slides-June-2023.pdf" id="_ctrl0_ctl60_QuickLinkList_ctl02_link" class="module-links_list-item-link" target="_blank" _msttexthash="7286669" _msthash="106">Tổng quan về kế toán nội dung</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl03_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://jobs.netflix.com/culture" id="_ctrl0_ctl60_QuickLinkList_ctl03_link" class="module-links_list-item-link" target="_blank" _msttexthash="264511" _msthash="107">Văn hóa Netflix</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl04_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://s22.q4cdn.com/959853165/files/doc_downloads/cl71_netflix.pdf" id="_ctrl0_ctl60_QuickLinkList_ctl04_link" class="module-links_list-item-link" target="_blank" _msttexthash="20086794" _msthash="108">Phương pháp tiếp cận quản trị doanh nghiệp của Netflix</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl05_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://ir.netflix.net/governance/ESG/default.aspx" id="_ctrl0_ctl60_QuickLinkList_ctl05_link" class="module-links_list-item-link" target="_self" _msttexthash="371059" _msthash="109">Thông tin Netflix ESG</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl60_QuickLinkList_ctl06_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://jobs.netflix.com/podcast" id="_ctrl0_ctl60_QuickLinkList_ctl06_link" class="module-links_list-item-link" target="_blank" _msttexthash="406094" _msthash="110">WeAreNetflix Podcast</a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--content">
+                <div class="pane_inner"><span class="ContentPaneDiv"><span class="ContentPaneDiv5"><div id="_ctrl0_ctl63_divModuleContainer" class="module module-embed module-news-latest">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl63_lblTitle" class="module_title"><span id="_ctrl0_ctl63_lblModuleTitle" class="ModuleTitle" _msttexthash="4832464" _msthash="111">Phát hành và cập nhật tài chính</span></h2>
+        <div class="module_container module_container--inner">
+            <div class="module_rss module_rss--top module_q4-icon-links">
+    <a href="https://ir.netflix.net/rss/PressRelease.aspx" class="module_rss-link" target="_blank">
+        <span class="sr-only" _msttexthash="23461659" _msthash="112">Thông cáo báo chí Nguồn cấp RSS (mở trong cửa sổ mới)</span>
+    </a>
+</div>
+<div class="module_container module_container--content grid"><div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-2"><div class="module_item-wrap"><div class="module_headline"><a class="module_headline-link" href="https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2024/Netflix-to-Announce-First-Quarter-2024-Financial-Results/default.aspx" _msttexthash="7813429" _msthash="113">Netflix công bố kết quả tài chính quý I/2024</a></div><div class="module_date-time"><span class="module_date-text" _msttexthash="141375" _msthash="114">Tháng 15, 2024</span></div></div></div><div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-2"><div class="module_item-wrap"><div class="module_headline"><a class="module_headline-link" href="https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2024/Netflix-CFO-to-Present-at-the-Morgan-Stanley-Technology-Media--Telecom-Conference/default.aspx" _msttexthash="38294776" _msthash="115">Giám đốc tài chính Netflix trình bày tại Hội nghị Công nghệ, Truyền thông &amp; Viễn thông Morgan Stanley</a></div><div class="module_date-time"><span class="module_date-text" _msttexthash="202215" _msthash="116">Tháng Hai 27, 2024</span></div></div></div><div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-2"><div class="module_item-wrap"><div class="module_headline"><a class="module_headline-link" href="https://ir.netflix.net/investor-news-and-events/financial-releases/press-release-details/2023/Netflix-to-Announce-Fourth-Quarter-2023-Financial-Results/default.aspx" _msttexthash="7858565" _msthash="117">Netflix công bố kết quả tài chính quý IV/2023</a></div><div class="module_date-time"><span class="module_date-text" _msttexthash="1776996" _msthash="118">Tháng Mười Hai 15, 2023</span></div></div></div></div>
+<a class="button" href="https://ir.netflix.net/investor-news-and-events/financial-releases/default.aspx" _msttexthash="4024670" _msthash="119">Tất cả các bản phát hành</a>
+<script>
+$('.module-news-latest .module_container--content').news({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    showAllYears: true,
+    limit: 3,
+    dateFormat: "M d, yy",
+    append: false,
+    template: (
+        /* beautify preserve:start */
+        '{{#items}}' +
+            '<div class="module_item grid_col grid_col--1-of-3 grid_col--md-1-of-2">' +
+                '<div class="module_item-wrap">' +
+                    '<div class="module_headline">' +
+                        '<a class="module_headline-link" href="{{url}}"{{#blank}} target="_blank"{{/blank}}>{{title}}</a>' +
+                    '</div>' +
+                    '<div class="module_date-time">' +
+                        '<span class="module_date-text">{{date}}</span>' +
+                    '</div>' +
+                '</div>' +
+            '</div>' +
+        '{{/items}}'
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+        $.each(data.items, function(idx, item) {
+            var url = item.url.toLowerCase().split('.');
+            if (url[url.length - 1] == 'pdf') {
+                item.blank = true;
+            }
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv6"><div id="_ctrl0_ctl66_divModuleContainer" class="module module-embed module-latest-quarter dark">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl66_lblTitle" class="module_title"><span id="_ctrl0_ctl66_lblModuleTitle" class="ModuleTitle" _msttexthash="1534689" _msthash="120">Thu nhập hàng quý</span></h2>
+        <div class="module_container module_container--inner">
+            <div class="module_container module_container--content"><div class="module_item grid--no-gutter grid--no-space"><div class="module-financial_year"><span class="module-financial_year-text" _msttexthash="2577562" _msthash="121">Kết quả tài chính quý I/2024</span></div><div class="module_links module_q4-icon-links grid-no-gutter"><div class="grid_col grid_col--1-of-4 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2"><a class="module_link module_link-interview" href="https://www.youtube.com/@NetflixIR/featured" target="_blank"><span class="module_link-text" _msttexthash="3461783" _msthash="122">Video phỏng vấn</span><span class="sr-only" _msttexthash="6913348" _msthash="123">(Mở trong cửa sổ mới)</span></a></div><div class="grid_col grid_col--1-of-4 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2"><a class="module_link module_link-letter" href="https://s22.q4cdn.com/959853165/files/doc_financials/2024/q1/FINAL-Q1-24-Shareholder-Letter.pdf" target="_blank"><span class="module_link-text" _msttexthash="2836561" _msthash="124">Thư gửi cổ đông</span><span class="sr-only" _msttexthash="6913348" _msthash="125">(Mở trong cửa sổ mới)</span></a></div><div class="grid_col grid_col--1-of-4 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2"><a class="module_link module_link-financial" href="https://s22.q4cdn.com/959853165/files/doc_financials/2024/q1/Q1-24-Website-Financials.xlsx" target="_blank"><span class="module_link-text" _msttexthash="338845" _msthash="126">Báo cáo tài chính</span><span class="sr-only" _msttexthash="6913348" _msthash="127">(Mở trong cửa sổ mới)</span></a></div><div class="grid_col grid_col--1-of-4 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2"><a class="module_link module_link-transcript" href="https://s22.q4cdn.com/959853165/files/doc_downloads/2024/4/netflix-inc-_earnings-call_2024-04-18_english.pdf" target="_blank"><span class="module_link-text" _msttexthash="161382" _msthash="128">Transcript</span><span class="sr-only" _msttexthash="6913348" _msthash="129">(Mở trong cửa sổ mới)</span></a></div></div></div></div>
+<a class="button" href="https://ir.netflix.net/financials/quarterly-earnings/default.aspx" _msttexthash="2145286" _msthash="130">Tất cả các quý</a>
+<script>
+$('.module-latest-quarter .module_container--content').financials({
+    usePublic: GetViewType() != "0",
+    apiKey: Q4ApiKey,
+    fetchAllYears: true,
+    reportTypes: ['First Quarter', 'Second Quarter', 'Third Quarter', 'Fourth Quarter'],
+    shortTypes: {
+        'First Quarter': 'First-Quarter',
+        'Second Quarter': 'Second-Quarter',
+        'Third Quarter': 'Third-Quarter',
+        'Fourth Quarter': 'Fourth-Quarter'
+    },
+    limit: 1,
+    append: false,
+    loadingMessage: '<p class="module_loader"><i class="q4-icon_spinner"></i><span class="sr-only">Loading latest financials...</span></p>',
+    template: (
+        /* beautify preserve:start */
+        '{{#items}}' +
+            '<div class="module_item grid--no-gutter grid--no-space">' +
+                '<div class="module-financial_year">' +
+                    '<span class="module-financial_year-text">{{shortType}} {{year}} Financial Results</span>' +
+                '</div>' +
+                '<div class="module_links module_q4-icon-links grid-no-gutter">' +
+                    '{{#docs}}' +
+                        '<div class="grid_col grid_col--1-of-4 grid_col--lc-1-of-3 grid_col--md-1-of-2 grid_col--sm-1-of-2">' +
+                            '<a class="module_link module_link-{{docCategory}}" href="{{docUrl}}"{{#blank}} target="_blank"{{/blank}}>' +
+                                '<span class="module_link-text">{{docTitle}}</span>' +
+                                '{{#blank}}<span class="sr-only">(opens in new window)</span>{{/blank}}'+
+                            '</a>' +
+                        '</div>' +
+                    '{{/docs}}' +
+                '</div>' +
+            '</div>' +
+        '{{/items}}'
+        /* beautify preserve:end */
+    ),
+    beforeRender: function(e, data) {
+        $.each(data.items, function(idx, item) {
+            $.each(item.docs, function(idx, doc) {
+                // Make sure any local links open in the same window
+                var url = doc.docUrl.toLowerCase().split('.');
+                if ( url[url.length-1] != 'aspx' ) {
+                    doc.blank = true;
+                }
+            });
+        });
+    }
+});
+</script>
+        </div>
+    </div>
+</div></span><span class="ContentPaneDiv7"><div id="_ctrl0_ctl69_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl69_divModuleContainer" class="module module-links module-quick-links-home list--reset">
+    <div class="module_container module_container--outer">
+        <h2 id="_ctrl0_ctl69_lblTitle" class="module_title"><span id="_ctrl0_ctl69_lblModuleTitle" class="ModuleTitle" _msttexthash="1431417" _msthash="131">Liên kết nhanh</span></h2>
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl69_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl69_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://ir.netflix.net/financials/annual-reports-and-proxies/default.aspx" id="_ctrl0_ctl69_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self"><span class="quick-link-annual" _msttexthash="2291718" _msthash="132">Báo cáo thường niên &amp;; Proxy<br _istranslated="1"></span></a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl69_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://ir.netflix.net/financials/sec-filings/default.aspx" id="_ctrl0_ctl69_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self"><span class="quick-link-sec" _msttexthash="928837" _msthash="133"><br _istranslated="1">Hồ sơ SEC</span></a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl69_QuickLinkList_ctl02_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="https://ir.netflix.net/stock-information/stock-quote/default.aspx" id="_ctrl0_ctl69_QuickLinkList_ctl02_link" class="module-links_list-item-link" target="_self"><span class="quick-link-stock" _msttexthash="2162342" _msthash="134">Thông tin chứng khoán<br _istranslated="1"></span></a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl69_QuickLinkList_ctl03_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="https://ir.netflix.net/resources/investor-contacts/default.aspx" id="_ctrl0_ctl69_QuickLinkList_ctl03_link" class="module-links_list-item-link" target="_self"><span class="quick-link-contact" _msttexthash="1330771" _msthash="135"> Liên hệ IR</span></a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--right">
+                <div class="pane_inner"><span class="RightPaneDiv"></span></div>
+            </div>
+        </div>
+        <div class="layout_footer" role="contentinfo">
+            <div class="pane pane--footer grid--no-gutter">
+                <div class="pane_inner clearfix"><span class="FooterPaneDiv"><span class="FooterPaneDiv14"><div id="_ctrl0_ctl39_divModuleContainer" class="module module-embed module-footer-logo">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <a href="https://ir.netflix.net/ir-overview/profile/default.aspx"><img src="./Netflix - Tổng quan - Hồ sơ_files/logo.png" alt="Netflix" _mstalt="96538" _msthash="136"></a>
+<span _msttexthash="1318213" _msthash="137">Nhà đầu tư</span>
+        </div>
+    </div>
+</div></span><span class="FooterPaneDiv15"><div id="_ctrl0_ctl42_divModuleContainer" class="module module-html module-footer-social list--reset">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <p _msttexthash="44707" _msthash="138">Theo</p>
+<ul>
+    <li class="module-footer-social_facebook">
+        <a href="https://www.facebook.com/netflix" target="_blank">
+            <i class="q4-icon_facebook"></i>
+            <span class="sr-only" _msttexthash="1011465" _msthash="139">QUẢNG CÁO</span>
+        </a>
+    </li>
+    <li class="module-footer-social_twitter">
+        <a href="https://twitter.com/netflix" target="_blank">
+            <i class="q4-icon_twitter"></i>
+            <span class="sr-only" _msttexthash="98995" _msthash="140">Twitter</span>
+        </a>
+    </li>
+    <li class="module-footer-social_instagram">
+        <a href="https://www.instagram.com/netflix/?hl=en" target="_blank">
+            <i class="q4-icon_stroke-instagram"></i>
+            <span class="sr-only" _msttexthash="2377830" _msthash="141">Ảnh minh họa</span>
+        </a>
+    </li>
+    <li class="module-footer-social_linkedin">
+        <a href="https://ca.linkedin.com/company/netflix" target="_blank">
+            <i class="q4-icon_linkedin"></i>
+            <span class="sr-only" _msttexthash="112424" _msthash="142">Linkedin</span>
+        </a>
+    </li>
+</ul>
+        </div>
+    </div>
+</div></span><span class="FooterPaneDiv16"><div id="_ctrl0_ctl45_RightBlock" class="hidden"></div>
+<div id="_ctrl0_ctl45_divModuleContainer" class="module module-links list--reset ">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <ul id="_ctrl0_ctl45_qlList" class="module-links_list">
+                
+                        <li id="_ctrl0_ctl45_QuickLinkList_ctl00_liQuickLink" class="QuickLinkRow" _msthidden="1">
+                            
+                            
+                            <a href="https://www.netflix.com/" id="_ctrl0_ctl45_QuickLinkList_ctl00_link" class="module-links_list-item-link" target="_self" _msttexthash="171392" _msthidden="1" _msthash="143">Netflix.com</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl45_QuickLinkList_ctl01_liQuickLink" class="QuickLinkRowAlt">
+                            
+                            
+                            <a href="http://account.netflix.com/TermsOfUse" id="_ctrl0_ctl45_QuickLinkList_ctl01_link" class="module-links_list-item-link" target="_self" _msttexthash="6278402" _msthash="144">Điều khoản sử dụng</a>
+                            
+                        </li>
+                    
+                        <li id="_ctrl0_ctl45_QuickLinkList_ctl02_liQuickLink" class="QuickLinkRow">
+                            
+                            
+                            <a href="http://account.netflix.com/PrivacyPolicy" id="_ctrl0_ctl45_QuickLinkList_ctl02_link" class="module-links_list-item-link" target="_self" _msttexthash="4048109" _msthash="145">Chính sách bảo mật</a>
+                            
+                        </li>
+                    
+            </ul>
+        </div>
+    </div>
+</div></span></span></div>
+            </div>
+            <div class="pane pane--footer2">
+                <div class="pane_inner"></div>
+            </div>
+            <div class="pane pane--credits">
+                <div class="pane_inner"><span class="Q4FooterDiv17"><div id="_ctrl0_ctl48_divModuleContainer" class="module module-embed hidden">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            <script>
+var q4App = $.extend(true, q4Defaults, {
+    init: function() {
+        var app = this;
+
+        app.cleanUp();
+        app.submitOnEnter('.module-unsubscribe');
+        app.submitOnEnter('.module-search');
+        app.validateSubmit('.module-search');
+        app.superfish($('.nav--main .level1'), {cssArrows:false});
+        app.mobileMenuToggle($('.layout'), '.pane--navigation', '.layout_toggle i');
+        app.cleanQuickLinks($('.module-links'));
+        app.copyright($('.copyright_year'))
+        app.reveal('.pane--footer .module-subscribe', '.module-subscribe_email', '.module-subscribe_mailing-list, .module_actions', true);
+        app.docTracking();
+        app.fancySignup();
+        app.resetDate(['.nav a[href*="s3.q4web.com"]:not([href$=".pdf"])']);
+        app.previewToolbar();
+        
+        app.searchToggle();
+        app.closeSearch();
+        app.mobileSearchToggle();
+        app.closeNav();
+        app.targetSelf();
+        app.contrast.init();
+    },
+    searchToggle: function(){
+    	$('.module-search_button').click(function(e){
+             var $this = $('.module-search .module_container--outer'),
+            $parent = $this.parent();
+            if (!$parent.hasClass('js--active')) {
+                e.preventDefault();
+                $parent.addClass('js--active');
+                $('.nav--main').addClass('js--hide');
+            }
+    	});       
+    },
+    closeSearch: function(){
+    	$('.module-search span.q4-icon_close').on('click', function(){
+                $('.module-search').removeClass('js--active');
+                $('.nav--main').removeClass('js--hide');
+    	});       
+    },
+    mobileSearchToggle: function(){
+    	$('.module-mobile-search-toggle').on('click', function(){
+            $(this).toggleClass('js--active');
+            $('.module-mobile-search').toggleClass('js--active');
+    	});       
+    },
+    closeNav: function(){
+    	$('.module-close-nav').on('click', function(){
+            $('.layout').removeClass('js--mobile');
+    	});       
+    },
+    targetSelf: function() {
+        $('.pane--footer .module-links a').attr('target','_self');
+    },
+    /*close fancybox after a selection is made*/
+    addToCalendar: function(a) {
+        $(a).on("click keypress", ".module_add-to-calendar-reveal", function(a) {
+            (13 == a.keyCode || "click" == a.type) && $.fancybox.open({
+                src: $(this).next(),
+                type: "inline",
+                opts: {
+                    slideClass: "fancybox-slide--no-padding"
+                }
+            })
+        })
+        $('.module_add-to-calendar-link').on('click', function() {
+            $.fancybox.close();
+        }); 
+    },
+    /*open second item because first item have "js--hidden"*/
+    toggle: function($container, item, toggle, panel, accordion, allButton, openFirst, openSecond) {
+        var $this = this,
+            $item = $container.find(item);
+
+        $this.accessibilize($container, $container.find(toggle), $container.find(panel));
+        
+        $item.on('click keypress', toggle, function(e) {
+            e.preventDefault();
+            if (e.which == 13 || e.type == 'click') {
+                if (accordion) {
+                    $this._accordionTrigger($(this), $container, item, toggle, panel);
+                } else {
+                    $this._toggleTrigger($(this), $container, item, panel);
+                }
+            }
+        });
+
+        if (allButton) {
+            $this._toggleAll($container, item, toggle, panel);
+        }
+
+        if (openFirst) {
+            $item.first().find(toggle).attr('aria-expanded', true);
+            $item.first().addClass('js--active').find(panel).removeClass('js--hidden');
+        }
+         if (openSecond) {
+            $item.first().find(toggle).attr('aria-expanded', true);
+            $item.first().next().addClass('js--active').find(panel).removeClass('js--hidden');
+        }
+    },
+    // toggle contrast function
+    contrast: {
+        toggle: '.module-contrast_button',
+        getCookie: function(){
+            return document.cookie.replace(/(?:(?:^|.*;\s*)contrast\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        },
+        setCookie: function(boolean) {
+            document.cookie = 'contrast='+boolean+'; path=/';
+        },
+        init: function(){
+            var inst = this;
+            if ( !inst.getCookie().length ) {
+                inst.setCookie('false');
+            } else if ( inst.getCookie() == 'true' ) {
+                $(inst.toggle).addClass('js--active');
+                $('body').addClass('js--contrast');
+            }
+
+            $(inst.toggle).on('click',function(e){
+                e.preventDefault();
+                if ( inst.getCookie() == 'false') {
+                    inst.setCookie('true');
+                } else {
+                    inst.setCookie('false');
+                }
+                $(this).toggleClass('js--active');
+                $('body').toggleClass('js--contrast');
+            });
+        }
+    },
+
+});
+
+q4App.init();
+</script>
+        </div>
+    </div>
+</div></span><span class="Q4FooterDiv8"><div id="_ctrl0_ctl72_divModuleContainer" class="module module-embed">
+    <div class="module_container module_container--outer">
+        
+        <div class="module_container module_container--inner">
+            
+        </div>
+    </div>
+</div></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+                    <input type="hidden" name="__antiCSRF" id="__antiCSRF" value="">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./Netflix - Tổng quan - Hồ sơ_files/anti-csrf.js.tải xuống">
+    </script>
+
+    <iframe id="q4l-iframe" title="IFrame" style="position: absolute; width: 0px; height: 0px; border: 0; left: -999px; top: -999px;" src="./Netflix - Tổng quan - Hồ sơ_files/authorize.html"></iframe>
+
+    <script>
+        Q4Login.IframeRedirectURI = "https://login.q4inc.com/authorize?client_id=gKrDY1E9BUSWfU7DGuW2CO4rjdskiNg7&scope=openid+profile+email&response_type=code&response_mode=query&nonce=USklAcW4mYEjopFDVIkbljLIfk&state=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJyZXR1cm5VcmwiOiJodHRwczovL2lyLm5ldGZsaXgubmV0L3E0bG9naW5jYWxsYmFjay5hc3B4IiwiZXhwIjoxNzIwMzc2NTQ5LjAsImlhdCI6MTcxNTExNjk0OS4wLCJpc3MiOiJRNC5XZWIuUHVibGljLlNpdGUiLCJhdWQiOiJ1cHN0cmVhbS5jZG4ud2ViLnByZC5xNGluYy5jb20ifQ.1Deh9CHppoY4ZlJBVIsls7EK4gt7dV_mw4I8rxu3NIQ&redirect_uri=https%3a%2f%2fauth.platform.q4inc.com%2fauth%2fpublicAuthRedirect&prompt=none";
+        (function () {
+            if (window.location.hash.includes("login=true")) {
+                // q4pid is set in the modal so it should already be there
+                const pendoId = window.localStorage.getItem("q4pid");
+
+                // email is also from modal
+                const email = window.localStorage.getItem("q4l_email");
+
+                let redirectUrl = $('#hdnRedirectToLoginUrl').val();
+                redirectUrl = redirectUrl.replace("_q4pidval_", pendoId);
+                redirectUrl = redirectUrl.replace("_q4lemail_", email);
+
+                window.location.replace(redirectUrl);
+            }
+        })();
+    </script>
+
+
+</body></html>

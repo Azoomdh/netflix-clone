@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://ir.netflix.net/q4logincallback.aspx#error=400 -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-ca" xml:lang="en-ca"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Redirecting to Studio
+</title></head>
+<body>
+    <script>
+        // Read id_token from URI
+        var idToken = location.hash.includes("id_token") ? location.hash.split("=").pop() : null;
+        var mainWin = (window.opener) ? window.opener : window.parent;
+        if (!isNaN(idToken)) {
+            idToken = null;
+        }
+        // Post message to main window with id_token
+        mainWin.postMessage({
+            name: 'q4l_id_token_message',
+            idToken: idToken
+        }, window);
+    </script>
+
+
+</body></html>
